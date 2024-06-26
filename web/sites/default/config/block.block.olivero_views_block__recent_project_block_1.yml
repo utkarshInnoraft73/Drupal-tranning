@@ -1,0 +1,30 @@
+uuid: e3afd49b-852a-4aa4-884e-2785741f3656
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_project
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__recent_project_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:recent_project-block_1'
+settings:
+  id: 'views_block:recent_project-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

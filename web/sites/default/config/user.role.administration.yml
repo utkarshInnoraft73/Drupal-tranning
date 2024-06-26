@@ -1,0 +1,52 @@
+uuid: df72d324-8a57-4c69-9475-b6219ad2f0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee_blogs
+    - node.type.employee_data
+    - node.type.projects
+    - node.type.skills
+  module:
+    - block
+    - comment
+    - field_ui
+    - node
+    - system
+    - toolbar
+id: administration
+label: Administration
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer actions'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer site configuration'
+  - 'administer user display'
+  - 'create employee_data content'
+  - 'create projects content'
+  - 'create skills content'
+  - 'delete any employee_blogs content'
+  - 'delete any employee_data content'
+  - 'delete any projects content'
+  - 'delete any skills content'
+  - 'delete employee_data revisions'
+  - 'delete own employee_data content'
+  - 'delete own projects content'
+  - 'delete own skills content'
+  - 'delete projects revisions'
+  - 'edit any employee_data content'
+  - 'edit any projects content'
+  - 'edit any skills content'
+  - 'edit own comments'
+  - 'edit own employee_data content'
+  - 'edit own projects content'
+  - 'edit own skills content'
+  - 'revert employee_data revisions'
+  - 'revert projects revisions'
+  - 'revert skills revisions'
+  - 'view employee_data revisions'
+  - 'view projects revisions'
+  - 'view skills revisions'

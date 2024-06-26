@@ -1,0 +1,8 @@
+uuid: c6b5f0c3-0cc3-4711-b0ae-137b2dbd612a
+langcode: en
+status: true
+dependencies: {  }
+id: hr-add-menu
+label: 'HR add menu'
+description: ''
+locked: false

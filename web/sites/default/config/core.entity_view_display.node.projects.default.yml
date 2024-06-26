@@ -1,0 +1,163 @@
+uuid: cfaec987-0522-41f7-8786-1ba464f518d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.body
+    - field.field.node.projects.field_customer_name
+    - field.field.node.projects.field_employee
+    - field.field.node.projects.field_project_title
+    - field.field.node.projects.field_start_date
+    - field.field.node.projects.field_tentetive_complete_date
+    - field.field.node.projects.layout_builder__layout
+    - node.type.projects
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          525f8052-0499-4b57-9971-5d88323953bd:
+            uuid: 525f8052-0499-4b57-9971-5d88323953bd
+            region: first
+            configuration:
+              id: 'field_block:node:projects:field_project_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a05b8543-b2f0-4825-bd4c-fce24088d394:
+            uuid: a05b8543-b2f0-4825-bd4c-fce24088d394
+            region: second
+            configuration:
+              id: 'field_block:node:projects:field_employee'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d365de56-7a32-4b41-b813-89869a81405f:
+            uuid: d365de56-7a32-4b41-b813-89869a81405f
+            region: first
+            configuration:
+              id: 'field_block:node:projects:field_customer_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          58941778-467a-41d8-b1c6-aaedf135da03:
+            uuid: 58941778-467a-41d8-b1c6-aaedf135da03
+            region: first
+            configuration:
+              id: 'field_block:node:projects:field_start_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2c1eb7d0-5346-454e-ade2-67b0f6b47e97:
+            uuid: 2c1eb7d0-5346-454e-ade2-67b0f6b47e97
+            region: first
+            configuration:
+              id: 'field_block:node:projects:field_tentetive_complete_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  field_customer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_employee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_tentetive_complete_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  body: true
+  layout_builder__layout: true
+  links: true

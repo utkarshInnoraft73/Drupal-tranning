@@ -1,0 +1,21 @@
+uuid: 94a723e8-7e90-4f9c-a33e-3ba0a63f1afb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.employee_data
+id: node.employee_data.field_name
+field_name: field_name
+entity_type: node
+bundle: employee_data
+label: 'Employee Name'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '[node:title]'
+default_value_callback: ''
+settings: {  }
+field_type: string

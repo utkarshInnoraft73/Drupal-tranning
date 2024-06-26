@@ -1,0 +1,21 @@
+uuid: 8fd21b59-a7d2-48b5-9d5e-fb252b69ac4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tentetive_complete_date
+    - node.type.projects
+  module:
+    - datetime
+id: node.projects.field_tentetive_complete_date
+field_name: field_tentetive_complete_date
+entity_type: node
+bundle: projects
+label: 'Tentetive Complete Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

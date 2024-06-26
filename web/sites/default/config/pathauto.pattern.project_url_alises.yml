@@ -1,0 +1,22 @@
+uuid: 671bd4b7-6f46-49f6-909d-01c72823ff0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: project_url_alises
+label: 'Project URL alises'
+type: 'canonical_entities:node'
+pattern: 'project/[node:title]'
+selection_criteria:
+  8b381187-d3da-4362-bebf-2960812a6d9e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8b381187-d3da-4362-bebf-2960812a6d9e
+    context_mapping:
+      node: node
+    bundles:
+      projects: projects
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,23 @@
+uuid: 4917a653-d613-4278-b13f-b7ae2e28f558
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary
+    - node.type.employee_data
+id: node.employee_data.field_salary
+field_name: field_salary
+entity_type: node
+bundle: employee_data
+label: "Employee's Salary"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000.0
+  max: null
+  prefix: ₹
+  suffix: /Month
+field_type: decimal

@@ -1,0 +1,30 @@
+uuid: 2c69873a-a45c-4759-85d2-e7f37e80e126
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_profile
+field_name: field_profile
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: 8356a3cc-3d45-473a-9295-37f1f7ac0f17
+    alt: 'Pofile image is not found'
+    title: ''
+    width: 240
+    height: 240
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

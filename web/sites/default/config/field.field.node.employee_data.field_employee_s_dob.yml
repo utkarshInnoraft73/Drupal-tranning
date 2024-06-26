@@ -1,0 +1,21 @@
+uuid: f96bf12e-9fa3-42d2-b574-33a54226bba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_s_dob
+    - node.type.employee_data
+  module:
+    - datetime
+id: node.employee_data.field_employee_s_dob
+field_name: field_employee_s_dob
+entity_type: node
+bundle: employee_data
+label: "Employee's DOB"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

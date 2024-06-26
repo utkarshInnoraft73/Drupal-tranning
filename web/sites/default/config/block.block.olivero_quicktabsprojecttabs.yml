@@ -1,0 +1,25 @@
+uuid: fccfdaf6-aabc-4224-ada1-5fa8a3d02968
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - olivero
+id: olivero_quicktabsprojecttabs
+theme: olivero
+region: content_above
+weight: 14
+provider: null
+plugin: 'quicktabs_block:project_tabs'
+settings:
+  id: 'quicktabs_block:project_tabs'
+  label: 'QuickTabs - Project tabs'
+  label_display: visible
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

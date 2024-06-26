@@ -1,0 +1,8 @@
+uuid: fab51359-bd7d-4ec5-b2ea-3b7a7dc1c0cd
+langcode: en
+status: true
+dependencies: {  }
+id: add-blog
+label: 'Add Blog'
+description: ''
+locked: false

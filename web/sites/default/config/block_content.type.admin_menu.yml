@@ -1,0 +1,8 @@
+uuid: 1b590ae3-4795-471a-843d-305713770d2c
+langcode: en
+status: true
+dependencies: {  }
+id: admin_menu
+label: 'Admin menu'
+revision: false
+description: null
