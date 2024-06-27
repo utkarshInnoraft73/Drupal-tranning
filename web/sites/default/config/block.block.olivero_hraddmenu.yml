@@ -1,0 +1,34 @@
+uuid: 5ec38a67-e0fe-4ee8-a4f2-330db25548f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.hr-add-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_hraddmenu
+theme: olivero
+region: highlighted
+weight: 0
+provider: null
+plugin: 'system_menu_block:hr-add-menu'
+settings:
+  id: 'system_menu_block:hr-add-menu'
+  label: 'HR add menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administration: administration
+      hr: hr

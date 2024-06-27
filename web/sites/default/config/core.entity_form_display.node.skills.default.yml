@@ -1,0 +1,28 @@
+uuid: 22e44fa9-1f58-48b1-87e8-7df34ead28a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.skills.body
+    - node.type.skills
+id: node.skills.default
+targetEntityType: node
+bundle: skills
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

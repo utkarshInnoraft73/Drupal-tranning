@@ -1,0 +1,64 @@
+uuid: 030ad344-b8e8-4d74-8b93-24442053aaf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.body
+    - field.field.node.projects.field_customer_name
+    - field.field.node.projects.field_employee
+    - field.field.node.projects.field_project_title
+    - field.field.node.projects.field_start_date
+    - field.field.node.projects.field_tentetive_complete_date
+    - field.field.node.projects.layout_builder__layout
+    - node.type.projects
+  module:
+    - datetime
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  field_customer_name:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_start_date:
+    type: datetime_default
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tentetive_complete_date:
+    type: datetime_default
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_project_title: true
+  layout_builder__layout: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

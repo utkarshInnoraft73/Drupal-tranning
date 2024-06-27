@@ -1,0 +1,220 @@
+uuid: 28b727c4-739b-4f45-b022-f7598bb89f44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_data.body
+    - field.field.node.employee_data.field_employee_email
+    - field.field.node.employee_data.field_employee_s_dob
+    - field.field.node.employee_data.field_employee_skills
+    - field.field.node.employee_data.field_employee_title
+    - field.field.node.employee_data.field_name
+    - field.field.node.employee_data.field_profile
+    - field.field.node.employee_data.field_salary
+    - node.type.employee_data
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          dbb192b7-3fae-4baa-81e2-942794fb67ea:
+            uuid: dbb192b7-3fae-4baa-81e2-942794fb67ea
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_profile'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: inline
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          522a1089-785c-4353-afb1-91aa6d69d3c8:
+            uuid: 522a1089-785c-4353-afb1-91aa6d69d3c8
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cfad1a1f-70bd-4b28-b925-6d2881a4b153:
+            uuid: cfad1a1f-70bd-4b28-b925-6d2881a4b153
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_employee_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: email_mailto
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f419369f-31ac-4b4c-9c2f-7b01d049626c:
+            uuid: f419369f-31ac-4b4c-9c2f-7b01d049626c
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_employee_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          7d7d8ae7-ac04-4e9d-9e6e-f4d52aabd7c3:
+            uuid: 7d7d8ae7-ac04-4e9d-9e6e-f4d52aabd7c3
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_employee_skills'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          1f936abb-f00a-4aa3-866a-b1162d6d3f9a:
+            uuid: 1f936abb-f00a-4aa3-866a-b1162d6d3f9a
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_salary'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          cf94d813-d032-46b3-8705-c8bead7da862:
+            uuid: cf94d813-d032-46b3-8705-c8bead7da862
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_employee_s_dob'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.employee_data.default
+targetEntityType: node
+bundle: employee_data
+mode: default
+content:
+  field_employee_email:
+    type: email_mailto
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_employee_s_dob:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_employee_skills:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_employee_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_profile:
+    type: image
+    label: inline
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_salary:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  body: true
+  links: true

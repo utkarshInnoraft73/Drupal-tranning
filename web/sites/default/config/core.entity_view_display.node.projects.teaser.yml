@@ -1,0 +1,42 @@
+uuid: efeea924-df62-4e0d-b031-b4ac133252bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projects.body
+    - field.field.node.projects.field_customer_name
+    - field.field.node.projects.field_employee
+    - field.field.node.projects.field_project_title
+    - field.field.node.projects.field_start_date
+    - field.field.node.projects.field_tentetive_complete_date
+    - field.field.node.projects.layout_builder__layout
+    - node.type.projects
+  module:
+    - text
+    - user
+id: node.projects.teaser
+targetEntityType: node
+bundle: projects
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_customer_name: true
+  field_employee: true
+  field_project_title: true
+  field_start_date: true
+  field_tentetive_complete_date: true
+  layout_builder__layout: true

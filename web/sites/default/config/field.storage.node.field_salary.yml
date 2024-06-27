@@ -1,0 +1,20 @@
+uuid: 9df2d953-cbed-4fb8-8ae7-a03a1db99b5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_salary
+field_name: field_salary
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

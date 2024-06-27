@@ -1,0 +1,33 @@
+uuid: b1f31923-381a-45d5-9c93-8bed54728f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee_blogs
+  module:
+    - block
+    - comment
+    - field_ui
+    - node
+    - shortcut
+    - system
+    - toolbar
+id: blogger
+label: Blogger
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer menu'
+  - 'administer site configuration'
+  - 'create employee_blogs content'
+  - 'delete own employee_blogs content'
+  - 'edit own comments'
+  - 'edit own employee_blogs content'
+  - 'view the administration theme'

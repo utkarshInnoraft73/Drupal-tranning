@@ -1,0 +1,22 @@
+uuid: 0203ff9b-15db-4fee-a95d-3bd75fcddbef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: landing_pages_alises
+label: 'landing pages Alises'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  9bfd7ce2-38ae-4f89-ab05-c0cd86fe91d3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9bfd7ce2-38ae-4f89-ab05-c0cd86fe91d3
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

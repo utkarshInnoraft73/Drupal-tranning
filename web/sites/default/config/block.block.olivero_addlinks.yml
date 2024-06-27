@@ -1,0 +1,33 @@
+uuid: f6c63e8a-7ea9-4504-8bc5-6c6a07a8aea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-links
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_addlinks
+theme: olivero
+region: highlighted
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-links'
+settings:
+  id: 'system_menu_block:add-links'
+  label: 'Add Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

@@ -1,0 +1,90 @@
+uuid: e7e54c31-2898-4c4b-9f93-1fd7d005a675
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_data.body
+    - field.field.node.employee_data.field_employee_email
+    - field.field.node.employee_data.field_employee_s_dob
+    - field.field.node.employee_data.field_employee_skills
+    - field.field.node.employee_data.field_employee_title
+    - field.field.node.employee_data.field_name
+    - field.field.node.employee_data.field_profile
+    - field.field.node.employee_data.field_salary
+    - image.style.thumbnail
+    - node.type.employee_data
+  module:
+    - datetime
+    - image
+id: node.employee_data.default
+targetEntityType: node
+bundle: employee_data
+mode: default
+content:
+  field_employee_email:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_employee_s_dob:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_employee_skills:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_employee_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_salary:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Employee name'
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

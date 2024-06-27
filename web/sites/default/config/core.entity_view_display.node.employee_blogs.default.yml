@@ -1,0 +1,49 @@
+uuid: 26ad5f3d-1ee3-4eb6-ba56-b8d36b0c0b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.employee_blogs.body
+    - field.field.node.employee_blogs.field_comment
+    - field.field.node.employee_blogs.field_creator_employee
+    - node.type.employee_blogs
+  module:
+    - comment
+    - text
+    - user
+id: node.employee_blogs.default
+targetEntityType: node
+bundle: employee_blogs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_creator_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

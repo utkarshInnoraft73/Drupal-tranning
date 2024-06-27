@@ -1,0 +1,22 @@
+uuid: bd68b0b4-94bc-4213-aa5b-c69d67811a8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: blog_url_alises
+label: 'Blog URL Alises'
+type: 'canonical_entities:node'
+pattern: 'blog/[node:title]'
+selection_criteria:
+  79136e04-b25c-4d30-8caa-1d2ddfb7606a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 79136e04-b25c-4d30-8caa-1d2ddfb7606a
+    context_mapping:
+      node: node
+    bundles:
+      employee_blogs: employee_blogs
+selection_logic: and
+weight: -5
+relationships: {  }

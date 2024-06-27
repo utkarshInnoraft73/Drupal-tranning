@@ -1,0 +1,22 @@
+uuid: 5ada6eb7-a4e1-4eb3-bb42-95ca90b76809
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: employee_profile_alises
+label: 'Employee profile alises'
+type: 'canonical_entities:node'
+pattern: 'employee/[node:nid]/[node:title]'
+selection_criteria:
+  268b3c9c-4492-4702-80e6-d5317631441f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 268b3c9c-4492-4702-80e6-d5317631441f
+    context_mapping:
+      node: node
+    bundles:
+      employee_data: employee_data
+selection_logic: and
+weight: -5
+relationships: {  }
